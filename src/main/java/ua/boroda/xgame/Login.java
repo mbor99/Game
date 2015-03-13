@@ -134,13 +134,13 @@ public class Login {
             new Select(driver.findElement(By.xpath(".//*[@id='resources']/tbody/tr[4]/td[5]/select"))).selectByVisibleText("Б5 [4:617:4]");
 
             driver.findElement(By.name("ship202")).clear();
-            driver.findElement(By.name("ship202")).sendKeys("15000");       //малый шатл
+            driver.findElement(By.name("ship202")).sendKeys("50000");       //малый шатл
 
             driver.findElement(By.name("ship210")).clear();
-            driver.findElement(By.name("ship210")).sendKeys("500");       // шпики
+            driver.findElement(By.name("ship210")).sendKeys("5000");       // шпики
 
             driver.findElement(By.name("ship206")).clear();
-            driver.findElement(By.name("ship206")).sendKeys("500");       //крейсер
+            driver.findElement(By.name("ship206")).sendKeys("50000");       //крейсер
 //
 //            driver.findElement(By.name("ship205")).clear();
 //            driver.findElement(By.name("ship205")).sendKeys("100");       //фрегат

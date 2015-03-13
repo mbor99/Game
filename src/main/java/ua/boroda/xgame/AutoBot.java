@@ -42,7 +42,7 @@ class AutoBot {
                 System.out.println(e);
                 System.out.println("Something happened with browser");
             } finally {
-                timerMin(20);
+                timerMin(120);
             }
         }
     }
