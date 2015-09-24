@@ -56,7 +56,7 @@ class AutoBot {
 
 
     void launchBot(Login login) throws IOException, InterruptedException {
-        int max = 35;
+        int max = 34;
 
         for (int t = 0; t < 10000; t++) {
             fleetFree = getFleetFree();

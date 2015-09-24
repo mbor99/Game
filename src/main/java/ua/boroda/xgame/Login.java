@@ -134,13 +134,13 @@ public class Login {
             new Select(driver.findElement(By.xpath(".//*[@id='resources']/tbody/tr[4]/td[5]/select"))).selectByVisibleText("Б5 [4:617:4]");
 
             driver.findElement(By.name("ship202")).clear();
-            driver.findElement(By.name("ship202")).sendKeys("50000");       //малый шатл
+            driver.findElement(By.name("ship202")).sendKeys("5000");       //малый шатл
 
             driver.findElement(By.name("ship210")).clear();
-            driver.findElement(By.name("ship210")).sendKeys("5000");       // шпики
+            driver.findElement(By.name("ship210")).sendKeys("500");       // шпики
 
             driver.findElement(By.name("ship206")).clear();
-            driver.findElement(By.name("ship206")).sendKeys("50000");       //крейсер
+            driver.findElement(By.name("ship206")).sendKeys("500");       //крейсер
 //
 //            driver.findElement(By.name("ship205")).clear();
 //            driver.findElement(By.name("ship205")).sendKeys("100");       //фрегат
@@ -170,6 +170,7 @@ public class Login {
             Thread.sleep(1500);
             driver.findElement(By.id("submit")).click();
 
+       //     new Select(driver.findElement(By.name("expeditiontime"))).selectByVisibleText("8");
 
             driver.findElement(By.id("submit")).click();
 
@@ -458,12 +459,12 @@ public class Login {
     public static void uploadResources() {
         driver.navigate().to(serverLink + "allykasse.php");
         String maxResToUpload = "811287";
-//        driver.findElement(By.name("metall")).clear();
-//        driver.findElement(By.name("metall")).sendKeys(maxResToUpload);
-//        driver.findElement(By.name("kristall")).clear();
-//        driver.findElement(By.name("kristall")).sendKeys(maxResToUpload);
+        driver.findElement(By.name("metall")).clear();
+        driver.findElement(By.name("metall")).sendKeys("300000");
+        driver.findElement(By.name("kristall")).clear();
+        driver.findElement(By.name("kristall")).sendKeys("250000");
         driver.findElement(By.name("deuterium")).clear();
-        driver.findElement(By.name("deuterium")).sendKeys(maxResToUpload);
+        driver.findElement(By.name("deuterium")).sendKeys("242000");
         driver.findElement(By.name("submit")).click();
     }
 
