@@ -28,7 +28,10 @@ class AutoBot {
         String arg1 = args[0];
         System.out.println("arg1 = " + arg1);
         if (arg1.equals("0")) {
-            resourceFolderLocal = "L:\\Education\\DBTask\\XGame\\src\\main\\resources\\";
+// Миша ПК
+//            resourceFolderLocal = "L:\\Education\\DBTask\\XGame\\src\\main\\resources\\";
+            resourceFolderLocal = "C:\\Projects\\xgame\\Game\\Game\\src\\main\\resources\\";
+
         } else {
             resourceFolderLocal = arg1;
         }
